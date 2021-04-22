@@ -3,10 +3,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="index.css">
+<!-- Include Ionic into the project -->
 <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/> 
-<!-- Include Ionic into the project -->
+
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
 </head>
 
 <body>
@@ -25,12 +29,11 @@
                         <ion-button color="light" expand="block" onclick="newElement()" >Add</ion-button>
                     </ion-item>
                     <ion-list id="myUL" lines="none">
-                        <ion-item onClick="strikeIt(this)">Hit the gym.</ion-item>
-                        <ion-item class="checked" onClick="strikeIt(this)">Pay bills.</ion-item>
-                        <ion-item onClick="strikeIt(this)">Meet Geogre.</ion-item>
+                        
                     </ion-list>           
         </ion-content>
     </ion-app>  
+    <script src="firebase.js"></script>
     <script src="index.js"></script> 
 
 </body>
