@@ -32,7 +32,7 @@ function renderNotes(doc){
     li.onclick = function strikeIt(){
         this.classList.toggle("checked");
         // console.log(li.innerHTML);
-        // Set the "checked" field of the city 'DC'
+        // Set the "checked" field 'checked'
         db.collection("notes").doc(inputValue).update({
             checked: this.classList.contains("checked")
         })
